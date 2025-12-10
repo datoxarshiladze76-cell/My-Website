@@ -64,7 +64,7 @@
     .rainbow {
         background: linear-gradient(45deg, red, orange, yellow, green, lightblue, blue, indigo, violet);
         color: white; 
-        min-height: 100vh; /* feel whole screen */
+        min-height: 100vh; /* fill whole screen */
     }
 
     /* Heading transition */
@@ -72,11 +72,13 @@
         transition: color 0.4s;
     }
 
-    body:not(.rainbow) #modeLabel {
-        color: black;
+    /* body transition */
+    body:not(.rainbow) 
+    #modeLabel {
+        transition: color 0.4s;
     }
     #modeLabel {
-        color: black;
+        color: white;
     }
     </style>
 </head>
@@ -116,9 +118,3 @@
       <span class="slider"></span>
   </label>
 </body>
-
-
-
-
-
-
